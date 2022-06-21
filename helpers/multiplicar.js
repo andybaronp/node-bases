@@ -1,5 +1,6 @@
-const { writeFileSync } = require('fs')
-const colors = require('colors')
+import {writeFileSync} from 'fs'
+import colors from 'colors'
+
 
 const crearArchivo = async (base = 1, l = false, h = 10) => {
   try {
@@ -28,4 +29,4 @@ const crearArchivo = async (base = 1, l = false, h = 10) => {
     throw err
   }
 }
-module.exports = { crearArchivo }
+export default crearArchivo
